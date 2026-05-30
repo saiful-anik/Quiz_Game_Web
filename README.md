@@ -6,11 +6,11 @@ The Quiz Game is a web-based project developed for the Software Development 1 co
 
 ## Screenshots
 
-![App Screenshot](https://saiful-anik.netlify.app/project/quiz_1.png)
+![App Screenshot](https://data.saiful-anik.website/quiz-game/quiz_1.png)
 
-![App Screenshot](https://saiful-anik.netlify.app/project/quiz_2.png)
+![App Screenshot](https://data.saiful-anik.website/quiz-game/quiz_2.png)
 
-![App Screenshot](https://saiful-anik.netlify.app/project/quiz_3.png)
+![App Screenshot](https://data.saiful-anik.website/quiz-game/quiz_3.png)
 
-![App Screenshot](https://saiful-anik.netlify.app/project/quiz_4.png)
+![App Screenshot](https://data.saiful-anik.website/quiz-game/quiz_4.png)
 
