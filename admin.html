@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game Admin</title>
+    <link rel="stylesheet" href="./admin-style.css">
+    <script src="./api-config.js" defer></script>
+    <script src="./admin-script.js" defer></script>
+</head>
+<body>
+    <main class="page">
+        <section id="login-view" class="login-card">
+            <h1>Admin login</h1>
+            <form id="login-form">
+                <input id="admin-username" placeholder="Username" autocomplete="username" required>
+                <input id="admin-password" type="password" placeholder="Password" autocomplete="current-password" required>
+                <button>Log in</button>
+            </form>
+            <p id="login-message" class="message"></p>
+        </section>
+
+        <section id="dashboard-view" class="hide">
+            <header class="topbar">
+                <div><h1>Quiz Admin</h1><p><span id="player-count">0</span> total players</p></div>
+                <button id="logout-button" class="secondary">Log out</button>
+            </header>
+            <div class="dashboard-grid">
+                <section class="card">
+                    <h2 id="form-title">Add question</h2>
+                    <form id="question-form">
+                        <input id="question-id" type="hidden">
+                        <textarea id="new-question" placeholder="Question" required></textarea>
+                        <input id="option-one" placeholder="Option 1" required>
+                        <input id="option-two" placeholder="Option 2" required>
+                        <label><input type="radio" name="correct-option" value="0" checked> Option 1 is correct</label>
+                        <label><input type="radio" name="correct-option" value="1"> Option 2 is correct</label>
+                        <div class="actions"><button id="save-button">Add question</button><button id="cancel-edit" class="secondary hide" type="button">Cancel</button></div>
+                    </form>
+                    <p id="form-message" class="message"></p>
+                </section>
+                <section class="card questions-card">
+                    <h2>All questions <span id="question-count"></span></h2>
+                    <div id="questions-list"></div>
+                </section>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

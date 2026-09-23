@@ -5,45 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Game</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./api-config.js" defer></script>
     <script src="./script.js" defer></script>
 </head>
 <body>
-
     <div id="bg"></div>
-    
     <div id="project-name" onclick="home()">Quiz Game</div>
-
-    
     <div id="center-box">
-        
-        <div id="start" class="">
-            <img src="./icon.jpg" alt="">
+        <div id="start">
+            <img src="./icon.jpg" alt="Quiz Game">
             <div class="t1">Quiz Game</div>
+            <div id="best-score">Best score: --</div>
             <button onclick="startGame()">Play</button>
         </div>
 
         <div id="quiz-game" class="hide">
             <div id="count">Question 1 of 5</div>
             <div id="question">What is 2+2?</div>
-        
             <div id="options">
                 <button id="op0" class="option" onclick="buttonClicked(0)">option 1</button>
                 <button id="op1" class="option" onclick="buttonClicked(1)">option 2</button>
             </div>
         </div>
-        
+
         <div id="score" class="hide">
             <div id="msg">Better luck next time!</div>
-
-            <div id="progress" class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">50%</div>
-            
+            <div id="score-summary"></div>
+            <div id="progress" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
             <button onclick="playAgain()">Play Again</button>
-
         </div>
-
     </div>
-
-    
-
 </body>
 </html>
